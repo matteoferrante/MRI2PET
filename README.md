@@ -45,6 +45,26 @@ This work demonstrates that a **3‑D U‑Net** can learn to reconstruct PET upt
 
 Synthetic PET volumes preserved fine‑grained spatial patterns and remained accurate after spatial normalisation, laying a foundation for non‑invasive, low‑cost neuro‑inflammation imaging.
 
+
+**Abstract**
+Introduction: Neuroinflammation, a pathophysiological process involved in numerous disorders, is
+typically imaged using [ 11 C]PBR28 (or TSPO) PET. However, this technique is limited by high costs
+and ionizing radiation, restricting its widespread clinical use. MRI, a more accessible alternative, is
+commonly used for structural or functional imaging, but when used using traditional approaches has
+limited sensitivity to specific molecular processes. This study aims to develop a deep learning model
+to generate TSPO PET images from structural MRI data collected in human subjects.
+Methods: A total of 204 scans, from participants with knee osteoarthritis (n = 15 scanned once, 15
+scanned twice, 14 scanned three times), back pain (n = 40 scanned twice, 3 scanned three times), and
+healthy controls (n=28, scanned once), underwent simultaneous 3T MRI and [ 11 C]PBR28 TSPO PET
+scans. A 3D U-Net model was trained on 80% of these PET-MRI pairs and validated using 5-fold
+cross-validation. The model’s accuracy in reconstructed PET from MRI only was assessed using
+various intensity and noise metrics.
+Results: The model achieved a low voxel-wise mean squared error (0.0033 ± 0.0010) across all folds
+and a median contrast-to-noise ratio of 0.0640 ± 0.2500 when comparing true to reconstructed PET
+images. The synthesized PET images accurately replicated the spatial patterns observed in the
+original PET data. Additionally, the reconstruction accuracy was maintained even after spatial
+normalization.
+
 ## Repository layout
 
 ```
