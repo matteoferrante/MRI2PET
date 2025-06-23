@@ -1,0 +1,16 @@
+# Ignore everything by default
+
+*
+
+# Allow folder structure to be committed
+
+!\*/
+
+# Keep the .gitignore itself
+
+!.gitignore
+
+# Track Python scripts and Jupyter notebooks
+
+!*.py
+!*.ipynb
